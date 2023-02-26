@@ -1,0 +1,75 @@
+*   {
+     color: blue;
+    font-family: 'Roboto', sans-serif;
+    }
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: red;
+    width: 700;
+    height: 1000;
+    font-weight: bold;
+}
+
+h1{
+    color: black;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+h2 {
+    color: darkred;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 20px
+}
+
+h3 {
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10 px;
+    border-bottom: 2px solid darkred;
+}
+
+header{
+    border: solid black;
+    padding: 50px;
+    margin: 15px;
+
+}
+section{
+    width: 300px;
+    border: 5px solid black;
+    padding: 50px;
+    margin: 20px;
+}
+
+#parrafo_raro {
+    color: blueviolet;
+    font-size: 23px;
+}
+
+.miclase{
+color: brown;
+font-size: 70px;
+
+}
+
+img.alineadoTextoImagenArriba{
+    vertical-align: text-top;  
+  }
+  img.alineadoTextoImagenCentro{
+    vertical-align: middle;
+  }
+  img.alineadoTextoImagenAbajo{
+    vertical-align: text-bottom;  
+  }
