@@ -11,19 +11,20 @@
  <meta property="og:image" content=" http://example.com/image.jpg" />
  <meta property="og:description" content="Contratame!" />
     <title>Curriculum Vitae</title>
-    <link rel="icon" type="image/x-icon" href="logo LM2.png">
+    <link rel="icon" type="image/x-icon" href="img/logo LM2.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/estilo.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
-    
+
 </head>
 <body>
     <header>
+      <!-- Barra de menu-->
       <div class="menu">
-         <img class="logo" src="logo LM2.png" alt="Imagen not found" height="100px" width="100px">
+         <img id="fotocv" class="logo" src="img/logo LM2.png" alt="Imagen not found" height="100px" width="100px">
           <nav class="botonesMenu">
             <ul>
               <li> <a href="#experiencia"> Experiencia </a></li>
@@ -35,12 +36,13 @@
         </div>  
     </header>
     
+    <!--Este div baja el contenido para que la barra de menu no lo tape-->
     <div class="contenido">
 
       <div class="container1">
         <div class="row">
           <div class="col-2">
-            <img class="foto_cv" src="Foto del cv.jpeg" alt="Imagen not found" height="100px" width="100px">
+            <img class="foto_cv" src="img/Foto para CV.jpg" alt="Imagen not found" height="100px" width="100px">
           </div>
           <div class="col">
             
@@ -55,13 +57,18 @@
         <div class="row">
           <div class="col-3">
               <h3> DATOS PERSONALES </h3>
-              <span class="titulos"> Fecha de Nacimiento: </span> <span> 08/03/94</span> <br><br>
-              <span class="titulos"> Edad: </span> <span> 29 años</span> <br><br>
-              <span class="titulos"> Estado Civil: </span> <span> Soltero</span> <br><br>
-              <span class="titulos"> Domicilio: </span> <span> calle 134 n4931 - La Plata - Buenos Aires</span> <br><br>
-              <span class="titulos"> Mail: </span> <span> luciomaldini17@gmail.com</span> <br><br>
-              <span class="titulos"> Teléfono: </span> <span> 221-555-8713</span> <br><br>
-
+              <!--Boton que permite mostrar y ocultar los datos personales-->
+              <button id="verMas" onclick="mostrar();"> Mas detalles </button>
+              <button id="verMenos" onclick="ocultar();"> Ocultar detalles </button>
+              <br/>
+              <div id="mostrar"> 
+                <span class="titulos"> Fecha de Nacimiento: </span> <span> 08/03/94</span> <br><br>
+                <span class="titulos"> Edad: </span> <span> 28 años</span> <br><br>
+                <span class="titulos"> Estado Civil: </span> <span> Soltero</span> <br><br>
+                <span class="titulos"> Domicilio: </span> <span> calle 134 n4931 - La Plata - Buenos Aires</span> <br><br>
+                <span class="titulos"> Mail: </span> <span> luciomaldini17@gmail.com</span> <br><br>
+                <span class="titulos"> Teléfono: </span> <span> 221-555-8713</span> <br><br>
+              </div>
               <h3> Idiomas e Informática </h3>
               <span class="titulos"> Ingles avanzado: </span> <span> Certificación otorgada por la Universidad de Cambridge por haber aprobado el Preliminary English Test</span> <br><br>
               <span class="titulos"> Microsoft Dynamics CRM: </span> <span> Conocimiento avanzado en desarrollo e implementación de procesos para gestion de clientes</span> <br><br>
@@ -72,19 +79,23 @@
           <div class="col">
             <a name="experiencia" />
               <h3> EXPERIENCIA </h3>
-              <span class="titulos"> CUSTOMER RELATIONSHIP MANAGMENT • FEDERACIÓN PATRONAL SEGUROS S.A. • 22/03/2016 - actualidad: </span> <span> Tareas realizadas dentro del Área de Relacionamiento con los clientes:</span> <br>
-              <ul>
-                <li>Gestión de Campañas en Redes Sociales.</li>
-                <li>Campañas en Adwords.</li>
-                <li>Gestión de posibles nuevos clientes.</li>
-                <li>Analisis de Customer Journey.</li>
-                <li>Manejo y soporte del Sistema Dynamics CRM, mediante el cual se registran Requerimientos, Quejas, Reclamos y Pedidos de diferentes sectores con atención al público hacia sectores administrativos. Mediante este sistema se registra la gestión del sector administrativo y los tiempos de respuesta.</li>
-                <li>Gestión y Asistencia técnica al Centro de Contacto. Programación de preatendedores telefónicos, configuración de lineas y centrales telefónicas.</li>
-                <li>Desarrollo de bot de atención para clientes y prestadores en canales digitales y Whtatsapp</li>
-              </ul>
+              <p class="titulos"> CUSTOMER RELATIONSHIP MANAGMENT • FEDERACIÓN PATRONAL SEGUROS S.A. • 22/03/2016 - actualidad: </p> 
+                <p> Tareas realizadas dentro del Área de Relacionamiento con los clientes:</p>
+                  <ul>
+                    <li>Gestión de Campañas en Redes Sociales.</li>
+                    <li>Campañas en Adwords.</li>
+                    <li>Gestión de posibles nuevos clientes.</li>
+                    <li>Analisis de Customer Journey.</li>
+                    <li>Manejo y soporte del Sistema Dynamics CRM, mediante el cual se registran Requerimientos, Quejas, Reclamos y Pedidos de diferentes sectores con atención al público hacia sectores administrativos. Mediante este sistema se registra la gestión del sector administrativo y los tiempos de respuesta.</li>
+                    <li>Gestión y Asistencia técnica al Centro de Contacto. Programación de preatendedores telefónicos, configuración de lineas y centrales telefónicas.</li>
+                  <li>Desarrollo de bot de atención para clientes y prestadores en canales digitales y Whtatsapp</li>
+                </ul>
+
               <br>
-              <span class="titulos"> PREVENCIÓN DE LAVADO DE ACTIVOS • FEDERACIÓN PATRONAL SEGUROS S.A. • 14/11/2013 – 21/03/2016: </span> <span> Se realizan tareas vinculadas a la Normativa vigente de la Unidad de Información Financiera, realizando gestiones de documentación e información a clientes y analizando el perfil de los mismos, evaluando sus operaciones y relación con el perfil económico, financiero y patrimonial.</span> <br><br>
-              <span class="titulos"> OPERADOR TELEFÓNICO • FEDERACIÓN PATRONAL SEGUROS S.A. • 17/12/2012 – 14/11/2013</span> <span> Operador dentro del Centro de Atención Telefónica, realizando tareas de:</span> <br>
+              <p class="titulos"> PREVENCIÓN DE LAVADO DE ACTIVOS • FEDERACIÓN PATRONAL SEGUROS S.A. • 14/11/2013 – 21/03/2016: </p> 
+              <p> Se realizan tareas vinculadas a la Normativa vigente de la Unidad de Información Financiera, realizando gestiones de documentación e información a clientes y analizando el perfil de los mismos, evaluando sus operaciones y relación con el perfil económico, financiero y patrimonial.</p> <br>
+              <p class="titulos"> OPERADOR TELEFÓNICO • FEDERACIÓN PATRONAL SEGUROS S.A. • 17/12/2012 – 14/11/2013</p> 
+              <p> Operador dentro del Centro de Atención Telefónica, realizando tareas de:</p>
               <ul>
                 <li>Negociación de indemnización correspondiente a Reclamos de Terceros en siniestros automotores.</li>
                 <li>Atención telefónica de Asegurados.</li>
@@ -106,12 +117,11 @@
         </div>
       </div>
     </div>
-
     <nav>
     </nav>
-    <footer>
-      <h1></h1>
-    </footer>
 
-</body>
+    <footer>
+    </footer>
+    <script src="Script.js"></script>
+  </body>
 </html>
